@@ -34,3 +34,20 @@ print(random_response)
 
 
 print(list_of_fave_food_responses[2])
+
+#Ask what the user's favourite food is
+print("What's your favourite food?")
+
+fave_food = input("What's your favourite food?")
+
+#If they answer pasta, respond with pasta response
+if fave_food == "pasta":
+    print("I also like Italian food")
+#If response is suishi, respond with having similar fav foods
+elif fave_food == "sushi":
+    print("That's my favourite food too")
+elif fave_food == "Fried Rice":
+    print("That is a good choice")
+#If none respond with thats soundss good
+else:
+    print(random.choice(list_of_fave_food_responses))

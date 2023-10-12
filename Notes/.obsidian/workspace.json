@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "00134e9174a53392",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conditionals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f59cde6ea2dc0852",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Natural Language Processing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Date",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markdown (Re)Introduction.md",
+                "file": "1. Natural Language Processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Markdown (Re)Introduction.md",
+                "file": "1. Natural Language Processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Markdown (Re)Introduction.md"
+                "file": "1. Natural Language Processing.md"
               }
             }
           }
@@ -146,6 +172,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a85981612ad95b93",
-  "lastOpenFiles": []
+  "active": "f59cde6ea2dc0852",
+  "lastOpenFiles": [
+    "Iteration.md",
+    "loop_practice_bot.py",
+    "Strings.md",
+    "food_suggestion_bot.py",
+    "Methods.md",
+    "Errors.md",
+    "1. Natural Language Processing.md",
+    "Modules.md",
+    "Boolean.md",
+    "Lists.md",
+    "Conditionals.md",
+    "Conditional.md",
+    "2023-09-25.md",
+    "Design.md",
+    "Untitled 1.canvas",
+    "2023-09-26.md",
+    "Untitled.canvas",
+    "chatbot.py",
+    "Markdown (Re)Introduction.md",
+    "quote_generator.py"
+  ]
 }
