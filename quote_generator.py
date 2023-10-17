@@ -21,3 +21,4 @@ fave_food = input("What's your favourite food?")
 
 #Respond to the user
 print(f"Oooo,{fave_food} is also my favourite food")
+
