@@ -11,14 +11,14 @@ print("1 is the worst and 5 is the best.")
 time.sleep(.1)
 print(".5 decimals can be used as well")
 time.sleep(.2)
-classes_taking = input("First, how many classes are you taking this semester?")
+classes_taking = int(input("First, how many classes are you taking this semester?"))
 time.sleep(.25)
-print("Cool, what are your four courses?")
-course_1 = input()
-course_2 = input()
-course_3 = input()
+print(f"Cool, what are your {classes_taking} courses?")  
+course_1 = input() 
+course_2 = input() 
+course_3 = input() 
 course_4 = input()
-
+   
 
 course_score = 0
 # Loop the question 4 times and ask the user to rate them out of 5
