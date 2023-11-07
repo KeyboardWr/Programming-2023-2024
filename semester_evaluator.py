@@ -24,19 +24,12 @@ course_score = 0
 time.sleep(.5)
 questions = (f"How would you rate your {courses[0]} course out of 5?")
 
-for i in range(classes_taking):
-    User_rating = float(input(questions))
-    if questions == (f"How would you rate your {courses[0]} course out of 5?"):
-        questions = (f"How would you rate your {courses[1]} course out of 5?")
-    elif questions == (f"How would you rate your {courses[1]} course out of 5?"):
-        questions = (f"How would you rate your {courses[2]} course out of 5?")
-    elif questions == (f"How would you rate your {courses[2]} course out of 5?"):
-        questions = (f"How would you rate your {courses[3]} course out of 5?")
-    elif questions == (f"How would you rate your {courses[3]} course out of 5?"):
-        question = (f"How would you rate your {courses[0]} course out of 5?")
+for course in courses:
+    user_rating = float(input(f"How would you rate {course} course out of 5? "))
 
 
-    course_score += User_rating
+
+    course_score += user_rating
    
     
 # Calculate the average score an present a response based on the average
