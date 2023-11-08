@@ -1,37 +1,34 @@
 # Chip Rater
 # Author: Herman Li
-# Date: Nov 2, 2023
+# Nov 1, 2023
 
-# Interview people about their perception of the deliciousness 
-# We will ask them a set of questions
-# In the end, we'll give an aggregate score
+# Interview people about their
+# perception of how delicious chips are
+# based on a set of questions
+# In the end, we'll give an aggregate score.
 
 # Greet the user
-print("Hi, Please answer the questions on the chip you just ate")
+print("Please answer the following questions based on the chip that you just ate.")
+
 # Create a list of questions to ask
 questions = [
-    "how crispy is the chip on a scale from 1 to 5? 5 is very crispy, 1 is mushy"
-    "How would you rate the taste from 1 to 5? 5 is the best chip ever. 1 is garbage"
-    "From 1 to 5, how would you rate the packaging? 5 is the best, 1 is terrible"
+    "How crispy is the chip on a scale from 1 to 5? 5 is very crispy. 1 is mushy.",
+    "How would you rate the taste from 1 to 5? 5 is the best taste ever. 1 is I would rather eat dirt.",
+    "From 1 to 5, how would you rate the packaging? 5 is I would buy this JUST for the packing. 1 is Someone got paid to put this together?"
 ]
 
-Total_Rating = 0
+final_score = 0
 
-# For every question in that list
+# Ask the questions to the user
 for question in questions:
     print(question)
+    
+    # Store their response
+    rating = int(input().strip(",.?! "))
+    final_score += rating
 
-    # Ask the question
+# Do some math - average
+average_score = final_score / len(questions)
 
-    # Get the user's rating
-    user_rating = input().strip(",.?! ").lower()
-
-    # Add the rating to some total-rating
-    Total_Rating += user_rating
-# Do some math on the results
-# Use the average score to represent the chip's rating
-average_rating = Total_Rating / len(questions)
-
-
-# Present the results
-print(f"The average rating for this chip is: {average_rating:.2f / 5}")
+# Present the results to the user
+print(f"The average score of this chip is: {average_score:.2f} / 5")
