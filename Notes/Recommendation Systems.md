@@ -14,4 +14,4 @@ We implemented the popularity/likes paradigm with our Favourite Bubble Tea activ
 
 N-point rating systems are used by many services particularly Jeff Bezos's baby, Amazon
 
-This paradigm provdies more granular information. Buyers are asked to rate the product on a 5-point scale. All the ratings are put togetther and an aggregate score is given out of five stars.
+This paradigm provides more granular information. Buyers are asked to rate the product on a 5-point scale. All the ratings are put together and an aggregate score is given out of five stars.

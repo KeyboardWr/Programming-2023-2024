@@ -13,6 +13,7 @@ time.sleep(1)
 classes_taking = int(input("First, how many classes are you taking this semester?"))
 time.sleep(.5)
 print(f"Great, what are your {classes_taking} courses?") 
+time.sleep(.2)
 course_number = 0 
 courses = []
 for i in range(classes_taking):
