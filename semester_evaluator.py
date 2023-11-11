@@ -34,9 +34,9 @@ for item in courses:
 time.sleep(.25)
 course_average = course_score / classes_taking
 
-if course_average <1:
+if course_average <=1:
     print(f"Ouch, your course average rating is {course_average}")
-elif course_average >1 and course_average <3:
+elif course_average >1 and course_average <=3:
     print(f"Not a bad semetser, your course average rating is {course_average}")
 elif course_average >3:
     print(f"Glad to hear that! Your course average rating is {course_average}")
