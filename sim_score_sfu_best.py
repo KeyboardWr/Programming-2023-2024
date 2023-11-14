@@ -21,6 +21,14 @@ profile = ["Bubble World",
            "Guadalupe (MBC)",
            "Steve's Poke Bar"]
 
+
+# Initialize the top score and their name
+most_similar_score = 0
+most_similar_name = ""
+least_similar_name = ""
+least_similar_score = 1_000_000
+
+
 with open("./data.csv") as f:
     # Throw away trhe header
     header = f.readline()
@@ -40,4 +48,29 @@ with open("./data.csv") as f:
         # Print the results from this line of data
         print(f"{current_name} - Score: {current_sim_score}")
 
+        # Update the most similar person
+        if current_sim_score > most_similar_score:
+            most_similar_score = current_sim_score
+            most_similar_name = current_name
+
+        # Update least similar person
+        if current_sim_score < least_similar_score:
+            least_similar_score = current_sim_score
+            least_similar_name = current_name
+ 
+
+
+
+            
+
+
+
+
+
+print("Least similar score:")
+print(f"{current_name} - score {least_similar_score}")
+
+
+print("Most similar score:")
+print(f"{most_similar_name} - score {most_similar_score}")
 

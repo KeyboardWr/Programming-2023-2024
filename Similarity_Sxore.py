@@ -19,3 +19,4 @@ for movie in Ubial_Movie_Favourites:
     
 
 # Display the results
+print(f" Your similarity score between you and Ben is {similarity_score}")
