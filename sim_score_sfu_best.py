@@ -57,14 +57,6 @@ with open("./data.csv") as f:
         if current_sim_score < least_similar_score:
             least_similar_score = current_sim_score
             least_similar_name = current_name
- 
-
-
-
-            
-
-
-
 
 
 print("Least similar score:")
