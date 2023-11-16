@@ -59,3 +59,6 @@ grocery_list = "eggs, milk, cheese, hotwheels"
 
 grocery_list = grocery_list.split("")
 ```
+
+
+
