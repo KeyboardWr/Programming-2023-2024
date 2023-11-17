@@ -90,13 +90,22 @@ with open("./data_example.csv", encoding="utf-8") as f:
                 People_in_Guangzhou += 1 
     print(f"{People_in_Guangzhou} person is from Guangzhou")
 
-# Problem 6:
+# Problem 7:
 # Just one is from Guangzhou! Alright, last one. How many people have a credit card
 # number that is even. There are a couple of ways to solve this.
 # You can either do this with the string or with the int.
+credit_card_numb = []
+last_digits_that_are_even = 0
+with open("./data_example.csv", encoding="utf-8") as f:
+    for line in f:
+        whole_thing = line.split(",")
+        credit_card = whole_thing[3]
+        credit_card_numb.append(credit_card)
+        last_digit = credit_card_numb(index-1)
+    print(last_digit)
 
 
-# Problem 7:
+# Problem 8:
 # Sorry, no answer for the above one. This one is a challenge question.
 # Can you design a way to find the most popular food?
 foods = []
