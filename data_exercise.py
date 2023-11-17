@@ -2,8 +2,8 @@ from pathlib import Path
 
 
 # File Exercises
-# Author:
-#
+# Author: Herman Li
+# Nov 16, 2023
 
 """Instructions:
 
@@ -67,20 +67,28 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # see if why your code doesn't work.
 # Else, you can move on to this part, which is, find out how many
 # people have the first letter of their first name start with "A".
+People_starting_with_A = 0
+Letter_in_Name = ("A")
 with open("./data_example.csv", encoding="utf-8") as f:
-    print()
+    for line in f:
+        whole_thing = line.split(",")
+        names = whole_thing[0]
+        for name in names:
+            if name[0] == Letter_in_Name:
+                People_starting_with_A += 1
+    print(f"{People_starting_with_A} have A as their first letter of their name")
 
 # Problem 6:
 # 19 people! Excellent. How many people come from Guangzhou?
 People_in_Guangzhou = 0
-china_city = ["Guangzhou"]
+china_city = ["Guangzhou\n"]
 with open("./data_example.csv", encoding="utf-8") as f:
     for line in f:
+        whole_thing = line.split(",")
         for item in china_city:
-            whole_thing = line.split(",")
             if item in whole_thing:
                 People_in_Guangzhou += 1 
-    print(f"{People_in_Guangzhou} are from Guangzhou")
+    print(f"{People_in_Guangzhou} person is from Guangzhou")
 
 # Problem 6:
 # Just one is from Guangzhou! Alright, last one. How many people have a credit card
@@ -88,7 +96,20 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # You can either do this with the string or with the int.
 
 
-
 # Problem 7:
 # Sorry, no answer for the above one. This one is a challenge question.
 # Can you design a way to find the most popular food?
+foods = []
+with open("./data_example.csv", encoding="utf-8") as f:
+    f.readline()
+    for line in f:
+        whole_thing = line.split("\n")
+        whole_thing = line.split(",")
+        possible_foods = whole_thing[1]
+        foods.append(possible_foods)
+
+    from collections import Counter
+    def most_frequent(foods):
+        occurence_count = Counter(foods)
+        return occurence_count.most_common(1)[0][0]
+    print(f"Apparently the {most_frequent(foods)} is the most liked dish for this data")
