@@ -68,14 +68,18 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # Else, you can move on to this part, which is, find out how many
 # people have the first letter of their first name start with "A".
 People_starting_with_A = 0
-Letter_in_Name = ("A")
+names_list = []
 with open("./data_example.csv", encoding="utf-8") as f:
+    f.readline()
     for line in f:
         whole_thing = line.split(",")
         names = whole_thing[0]
-        for name in names:
-            if name[0] == Letter_in_Name:
-                People_starting_with_A += 1
+        names_list.append(names)
+    for name in names_list:
+        starting_letter = name[0]
+        if starting_letter == "A":
+            People_starting_with_A += 1
+  
     print(f"{People_starting_with_A} have A as their first letter of their name")
 
 # Problem 6:
@@ -94,15 +98,18 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # Just one is from Guangzhou! Alright, last one. How many people have a credit card
 # number that is even. There are a couple of ways to solve this.
 # You can either do this with the string or with the int.
-credit_card_numb = []
+credit_card_numbs = []
 last_digits_that_are_even = 0
 with open("./data_example.csv", encoding="utf-8") as f:
     for line in f:
         whole_thing = line.split(",")
-        credit_card = whole_thing[3]
-        credit_card_numb.append(credit_card)
-        last_digit = credit_card_numb(index-1)
-    print(last_digit)
+        credit_cards = whole_thing[-2]
+        credit_card_numbs.append(credit_cards)
+    for cards in credit_card_numbs:
+        last_digit = cards[-1]
+        if last_digit == "2" or last_digit == 4 or last_digit == 6 or last_digit == 8:
+            last_digits_that_are_even += 1
+    print(f"{last_digits_that_are_even} people have their credit card number ending with an even number")
 
 
 # Problem 8:
