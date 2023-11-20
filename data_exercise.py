@@ -107,7 +107,7 @@ with open("./data_example.csv", encoding="utf-8") as f:
         credit_card_numbs.append(credit_cards)
     for cards in credit_card_numbs:
         last_digit = cards[-1]
-        if last_digit == "2" or last_digit == 4 or last_digit == 6 or last_digit == 8:
+        if last_digit == "0" or last_digit == "2" or last_digit == "4" or last_digit == "6" or last_digit == "8":
             last_digits_that_are_even += 1
     print(f"{last_digits_that_are_even} people have their credit card number ending with an even number")
 
