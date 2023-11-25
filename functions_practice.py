@@ -45,8 +45,8 @@ print(print_area_of_a_square(12.2))
 
 
 
-def print_stars(star_amount: float):
+def stars(star_amount: float):
     for i in range(star_amount):
     	print("*")
         
-print(print_stars(8))
+print(stars(8))
