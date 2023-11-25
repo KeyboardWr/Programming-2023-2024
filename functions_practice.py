@@ -3,16 +3,50 @@
 # Nov 24, 2023
 
 
-def area_of_a_square(sidelength: float):
-	"""Calculates the area of a square.
-	Results are in units squared.
-	
-	Params:
-	
-	sidelength - length of one side of the square"""
+def area_of_a_square(sidelength: float) -> float:
+    """Return the area of a square.
+    Results are in units squared.
 
-	area = sidelength ** 2
-	
-	print(f"The area of a square with side length = {sidelength} is: {area} square units")
+    Params:
 
-area_of_a_square(12.2)  # 12.2 is the argument
+    sidelength - length of one side of the square
+    """
+
+    area = sidelength**2
+
+    return area
+
+
+def print_area_of_a_square(sidelength: float) -> None:
+    """Calculate and print the area of a square.
+    Results are in units squared.
+
+    Params:
+
+    sidelength - length of one side of the square
+    """
+
+    area = sidelength**2
+
+    print(
+        f"The area of a square with side length {sidelength} is: {area} square units."
+    )
+
+
+print(print_area_of_a_square(12.2))
+# print_area_of_a_square(12)
+
+# Given two squares of two sidelengths
+#    12.2 and 144
+# Add the area of both squares
+
+# area_of_squares = area_of_a_square(12.2) + area_of_a_square(144)
+# print(area_of_squares)
+
+
+
+def print_stars(star_amount: float):
+    for i in range(star_amount):
+    	print("*")
+        
+print(print_stars(8))
