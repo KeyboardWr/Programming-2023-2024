@@ -17,7 +17,7 @@ def area_of_a_square(sidelength: float) -> float:
     return area
 
 
-def print_area_of_a_square(sidelength: float) -> None:
+def print_area_of_a_square(sidelength: float) -> float:
     """Calculate and print the area of a square.
     Results are in units squared.
 
@@ -33,7 +33,7 @@ def print_area_of_a_square(sidelength: float) -> None:
     )
 
 
-print(print_area_of_a_square(12.2))
+print(print_area_of_a_square(2))
 # print_area_of_a_square(12)
 
 # Given two squares of two sidelengths
@@ -50,3 +50,25 @@ def stars(star_amount: float):
     	print("*")
         
 print(stars(8))
+
+
+numbs_response = 0
+numbs = []
+def biggest_of_three(biggest_numb: float,biggest_numb2: float, biggest_numb3: float) -> float:
+    for i in range(3):
+        numbs.append(input())
+    for numb in input:
+        if numb[0] > numb[1] and numb[0] > numb[2]:
+            print(numb[1])
+        if numb[1] > numb[2] and numb[1] > numb[2]:
+            print(numb[2])
+        if numb[2] > numb[0] and numb[2] > numb[1]:
+            print(numb[3])
+            
+
+print(numbs)
+            
+
+	
+
+          
