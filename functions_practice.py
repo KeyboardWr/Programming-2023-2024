@@ -45,11 +45,12 @@ print(print_area_of_a_square(2))
 
 
 
-def stars(star_amount: float):
-    for i in range(star_amount):
-    	print("*")
+def stars(numb_stars: int) -> str:
+
+    return "*" * numb_stars
+
+print(stars(5))
         
-print(stars(8))
 
 
 numbs = []
@@ -68,14 +69,20 @@ bigest_of_three(100,200,300)
             
 
 
-def half_pyramid(rows):
-    print("*")
-    for i in range(1, rows + 1):
-        print('* ' * i)
+def pyramid(rows: int) -> None:
+    for current_layer in range(1, rows + 1):
+        print(stars(current_layer))
+pyramid(5)
 
-half_pyramid(5)
 
-        
+def pyramid_mirror(numb_layers: int) -> None:
+    for current_layer in range(1, numb_layers + 1):
+        spaces = " " * (numb_layers - current_layer)
+        print(spaces + stars(current_layer))
+
+pyramid_mirror(5)
+
+
             
 
 	
