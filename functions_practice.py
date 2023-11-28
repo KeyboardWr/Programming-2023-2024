@@ -52,21 +52,30 @@ def stars(star_amount: float):
 print(stars(8))
 
 
-numbs_response = 0
 numbs = []
-def biggest_of_three(biggest_numb: float,biggest_numb2: float, biggest_numb3: float) -> float:
-    for i in range(3):
-        numbs.append(input())
-    for numb in input:
-        if numb[0] > numb[1] and numb[0] > numb[2]:
-            print(numb[1])
-        if numb[1] > numb[2] and numb[1] > numb[2]:
-            print(numb[2])
-        if numb[2] > numb[0] and numb[2] > numb[1]:
-            print(numb[3])
+def bigest_of_three(biggest_numb: float, biggest_numb2: float, biggest_numb3: float):
+    if biggest_numb > biggest_numb2 and biggest_numb > biggest_numb3:
+        print(biggest_numb)
+    elif biggest_numb2 > biggest_numb and biggest_numb2 > biggest_numb3:
+        print(biggest_numb2)
+    elif biggest_numb3 > biggest_numb and biggest_numb3 > biggest_numb2:
+        print(biggest_numb3)
             
 
-print(numbs)
+bigest_of_three(100,200,300)
+            
+
+            
+
+
+def half_pyramid(rows):
+    print("*")
+    for i in range(1, rows + 1):
+        print('* ' * i)
+
+half_pyramid(5)
+
+        
             
 
 	
