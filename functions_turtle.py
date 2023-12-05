@@ -49,15 +49,15 @@ def draw_tree(level: int, height: int) -> None:
         # 1. Draw the branch
         alfred_river_wilson.forward(height)
         # 2. Turn to the left
-        alfred_river_wilson.left(39)
+        alfred_river_wilson.left(100)
         # 3. Draw a smaller tree (current level - 1)
-        draw_tree(level - 1, height / 1.5)
+        draw_tree(level - 1, height / 2)
         # 4. Turn to the right
-        alfred_river_wilson.right(39 * 2)
+        alfred_river_wilson.right(75* 2)
         # 5. Draw a smaller tree (current level - 1)
-        draw_tree(level - 1, height / 1.5)
+        draw_tree(level - 1, height / 2)
         # 6. Move back to beginning
-        alfred_river_wilson.left(39)
+        alfred_river_wilson.left(75)
         alfred_river_wilson.back(height)
     else:
         # create a level 0 tree, which is a leaf
@@ -71,8 +71,8 @@ alfred_river_wilson.setheading(90)
 alfred_river_wilson.width(4)
 alfred_river_wilson.color("brown")
 alfred_river_wilson.shape("arrow")
-alfred_river_wilson.speed(3)
-draw_tree(10, 150)
+alfred_river_wilson.speed(0)
+draw_tree(3, 150)
 turtle.done()
 
 turtle.done()
