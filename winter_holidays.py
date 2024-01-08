@@ -32,7 +32,7 @@ def winter_holiday(good_or_bad: str) -> str:
 
 
 def main() -> None:
-    response = input()
+    response = input("Would you like a good or bad event for my winter holidays?")
     winter_holiday(response)
 
 
